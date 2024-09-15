@@ -1,0 +1,66 @@
+@import "../../../css-config/mixins.scss";
+
+.edit-button {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #ddd;
+}
+
+.edit-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.edit-popup h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.edit-popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-popup input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 16px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: #fff;
+}

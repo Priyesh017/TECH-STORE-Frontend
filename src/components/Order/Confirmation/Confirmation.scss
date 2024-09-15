@@ -1,0 +1,30 @@
+.confirmation-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #d2d2d2;
+  border-radius: 2px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+}

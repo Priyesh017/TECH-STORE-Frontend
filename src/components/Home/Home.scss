@@ -1,0 +1,22 @@
+@import "../../css-config/mixins.scss";
+html {
+  scroll-behavior: smooth;
+
+  // Hides Scrollbar
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+
+  .cart-content::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and newer Edge */
+  }
+}
+.main-content {
+  .layout {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    @include xl {
+      max-width: 1200px;
+    }
+  }
+}

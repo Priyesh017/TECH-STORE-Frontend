@@ -1,0 +1,96 @@
+@import "../../css-config/mixins.scss";
+.order-page {
+  padding: 20px;
+  margin: 0 auto;
+
+  .cart-products {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1.5px solid #a7a7a7;
+    background-color: #a7a7a7;
+
+    .cart-product {
+      background-color: whitesmoke;
+
+      .close-btn {
+        cursor: pointer;
+        font-size: 20px;
+        color: #6b6b6b;
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .empty-cart {
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      margin: 0 auto;
+      padding: 10px 5px;
+      border: 1.5px solid #a7a7a7;
+      border-radius: 5px;
+      text-align: center;
+      color: #6b6b6b;
+      margin-bottom: 20px;
+      background-color: whitesmoke;
+    }
+  }
+
+  .cart-footer {
+    display: flex;
+    padding: 10px 0;
+    margin: 10px auto;
+    border: 1.5px solid #a7a7a7;
+    width: 100%;
+    background-color: whitesmoke;
+
+    @include lg {
+      width: 50%;
+    }
+    @include xl {
+      width: 50%;
+    }
+    @include xxl {
+      width: 50%;
+    }
+
+    .subtotal {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      padding: 5px;
+      width: 100%;
+      gap: 30%;
+
+      span {
+        font-weight: bold;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .order-btn {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+}
