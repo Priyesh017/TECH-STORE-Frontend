@@ -5,7 +5,7 @@ import BannerImg from "../../../assets/banner-img.png";
 const Banner = () => {
   const navigate = useNavigate();
   const handleShopNow = () => {
-    navigate("/categories"); // Replace "/shop" with the path you want to navigate to
+    navigate("/category/1"); // Replace "/shop" with the path you want to navigate to
   };
 
   return (
@@ -20,13 +20,20 @@ const Banner = () => {
             sequi sapiente, vitae odit porro?
           </p>
           <div className="ctas">
-            <div className="banner-cta">Read More</div>
+            <div className="banner-cta" onClick={handleShopNow}>
+              Read More
+            </div>
             <div className="banner-cta v2" onClick={handleShopNow}>
               Shop Now
             </div>
           </div>
         </div>
-        <img className="banner-img" src={BannerImg} alt="bannerimg" />
+        <img
+          className="banner-img"
+          src={BannerImg}
+          alt="bannerimg"
+          onClick={handleShopNow}
+        />
       </div>
     </div>
   );

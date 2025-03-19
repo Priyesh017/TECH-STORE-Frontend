@@ -11,10 +11,18 @@ const Order = () => {
 
   const handlePlaceOrder = () => {
     handleClearCart(); // Clear the cart before placing the order
-    // Logic to handle order placement, e.g., making an API call
-    // After placing the order, navigate to a confirmation page or reset the cart
-    console.log("Order placed!");
-    navigate("/confirmation");
+
+    // Check if address exists in local storage
+    const storedAddress = localStorage.getItem("addressDetails");
+
+    if (storedAddress) {
+      // If address exists, navigate to confirmation page
+      console.log("Order placed successfully");
+      navigate("/confirmation");
+    } else {
+      // If no address, navigate to address page
+      navigate("/address");
+    }
   };
 
   const handleBackToHome = () => {

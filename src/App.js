@@ -15,6 +15,7 @@ import Registration from "./components/Auth/Registration/Registration";
 import Login from "./components/Auth/Login/Login";
 import Profile from "./components/Profile/Profile";
 import ProtectedRoute from "./helpers";
+import Address from "./components/Order/Address/Address";
 
 const App = () => {
   return (
@@ -57,6 +58,14 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <Order />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/address"
+            element={
+              <ProtectedRoute>
+                <Address />
               </ProtectedRoute>
             }
           />
